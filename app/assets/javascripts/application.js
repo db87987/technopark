@@ -14,3 +14,11 @@
 //= require jquery_ujs
 //= require_tree .
 //= require ckeditor/init
+
+$(document).ready(function()
+{
+	$("#slider-idx ul").carouFredSel({
+		auto 			: {pauseDuration: 5000}, 
+   	//pagination  : "#s-pagination"
+	});
+});
