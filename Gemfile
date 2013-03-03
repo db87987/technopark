@@ -20,3 +20,12 @@ end
 
 gem 'jquery-rails'
 
+
+gem 'capistrano'
+gem 'unicorn'
+gem 'execjs'
+gem 'therubyracer'
+
+group :production do  
+gem 'mysql2'
+end
