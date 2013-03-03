@@ -11,12 +11,11 @@
 		
 		<dl class="news-list">
 			<% @tags.each do |tag| %>
-			<div id="<%= tag.id %>"><%= tag.title %></div>
+			<div id="<%= tag.id %>"></div>
 			<% Event.where(:tag_id => tag.id).all.each do |event| %>
 			<dt><span><%= event.title %></span><i><%= if event.date? then event.date.strftime("%d.%m.%Y") end %></i></dt>
 			<dd class="content">
 				<div><%= sanitize event.text %></div>
-				<a href="#" class="nl-detail-link">показать новость полностью</a>
 			</dd>
 			<% end %>
 			<% end %>
