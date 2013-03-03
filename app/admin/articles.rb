@@ -1,4 +1,6 @@
 ActiveAdmin.register Article do
+  filter :category_id
+  config.batch_actions = false
   
    index do 
     column :title
@@ -15,9 +17,6 @@ ActiveAdmin.register Article do
     default_actions
   end
   
-  filter :category_id
-  config.batch_actions = false
-  
   form :html => { :enctype => "multipart/form-data" } do |f|
         f.inputs "Details" do
           f.input :title 
@@ -30,9 +29,7 @@ ActiveAdmin.register Article do
         end
         f.buttons
       end
-      
-      
-      
+       
   show do
     attributes_table do
        row :title
