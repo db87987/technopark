@@ -1,11 +1,10 @@
-class CreateArticles < ActiveRecord::Migration
+class CreateBlocks < ActiveRecord::Migration
   def change
-    create_table :articles do |t|
+    create_table :blocks do |t|
       t.string :title
       t.attachment :img
-      t.text :text
       t.integer :category_id
-      
+
       t.timestamps
     end
   end

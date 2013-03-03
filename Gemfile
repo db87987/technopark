@@ -8,12 +8,14 @@ gem "friendly_id", "~> 4.0.9"
 gem 'russian', '~> 0.6.0'
 gem 'activeadmin'
 gem "meta_search",    '>= 1.1.0.pre'
+gem 'rails-i18n'
+gem "ckeditor"
 
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-
-  gem 'uglifier', '>= 1.0.3'
+  gem 'sass-rails'
+  gem 'coffee-rails'
+  gem 'coffee-script-source', '~> 1.4.0' # ADD THIS LINE, 1.5.0 doesn't compile ActiveAdmin JavaScript files
+  gem 'uglifier'
 end
 
 gem 'jquery-rails'

@@ -1,0 +1,27 @@
+ru:
+  no_image: "Изображение отсутствует"
+  no_category: "Категория отсутствует"
+  destroy_image: "Удалить изображение"
+  activerecord:
+    models:
+      admin_user:
+        one: "Администратор"
+        other: "Администраторы"
+      event:
+        one: "Новость"
+        other: "Новости"
+      article:
+        one: "Статья"
+        other: "Статьи"
+      block:
+        one: "Блочная статья"
+        other: "Блочные статьи"
+      tag:
+        one: "Тэг"
+        other: "Тэги"
+      category:
+        one: "Раздел"
+        other: "Разделы"
+    attributes:
+      event:
+        title: "Заголовок"
