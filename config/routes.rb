@@ -9,7 +9,7 @@ Technopark::Application.routes.draw do
   ActiveAdmin.routes(self)
   
   resources :categories
-  resources :events
+  match '/news',  to: 'events#index'
  
   root :to => 'StaticPages#home'
 
