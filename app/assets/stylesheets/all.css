@@ -1,32 +1,32 @@
 @font-face {
 		font-family: 'Segoe';
-		src: url('../webfonts/segoerg.eot');
-		src: url('../webfonts/segoerg.eot?#iefix') format('embedded-opentype'),
-				 url('../webfonts/segoerg.woff') format('woff'),
-				 url('../webfonts/segoerg.ttf') format('truetype'),
-				 url('../webfonts/segoerg.svg#segoerg') format('svg');
+		src: url('segoerg.eot');
+		src: local('☺'), url('segoerg.eot?#iefix') format('embedded-opentype'),
+				 url('segoerg.woff') format('woff'),
+				 url('segoerg.ttf') format('truetype'),
+				 url('segoerg.svg#segoerg') format('svg');
 		font-weight: normal;
 		font-style: normal;
 }
 
 @font-face {
 		font-family: 'SegoeWP';
-		src: url('../webfonts/segoewp.eot');
-		src: url('../webfonts/segoewp.eot?#iefix') format('embedded-opentype'),
-				 url('../webfonts/segoewp.woff') format('woff'),
-				 url('../webfonts/segoewp.ttf') format('truetype'),
-				 url('../webfonts/segoewp.svg#segoewp') format('svg');
+		src: url('segoewp.eot');
+		src: local('☺'), url('segoewp.eot?#iefix') format('embedded-opentype'),
+				 url('segoewp.woff') format('woff'),
+				 url('segoewp.ttf') format('truetype'),
+				 url('segoewp.svg#segoewp') format('svg');
 		font-weight: normal;
 		font-style: normal;
 }
 
 @font-face {
 		font-family: 'SegoeWP-Bold';
-		src: url('../webfonts/segoewpbold.eot');
-		src: url('../webfonts/segoewpbold.eot?#iefix') format('embedded-opentype'),
-				 url('../webfonts/segoewpbold.woff') format('woff'),
-				 url('../webfonts/segoewpbold.ttf') format('truetype'),
-				 url('../webfonts/segoewpbold.svg#segoewpbold') format('svg');
+		src: url('segoewpbold.eot');
+		src: local('☺'), url('segoewpbold.eot?#iefix') format('embedded-opentype'),
+				 url('segoewpbold.woff') format('woff'),
+				 url('segoewpbold.ttf') format('truetype'),
+				 url('segoewpbold.svg#segoewpbold') format('svg');
 		font-weight: normal;
 		font-style: normal;
 }
