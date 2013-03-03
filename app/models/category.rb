@@ -1,5 +1,6 @@
 class Category < ActiveRecord::Base
   attr_accessible :title
   has_many :articles
-  has_many :blocks
+  extend FriendlyId
+  friendly_id :title, :use => [:slugged, :history]
 end

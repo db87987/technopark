@@ -1,15 +1,10 @@
 <div class="h-wrap">
 	<div id="header">
-		<a href="index.html" title="На главную" class="logo">Технопарк Политехнический</a>
-	
+		<a href="/" title="На главную" class="logo">Технопарк Политехнический</a>
 		<ul>
-			<li><a href="#">Технопарк</a></li>
-			<li><a href="center.html">Центр предпринимательства</a></li>
-			<li><a href="buzz.html">Бизнес-инкубатор</a></li>
-			<li><a href="rezident.html">Резиденты</a></li>
-			<li><a href="programms.html">Программы</a></li>
-			<li><a href="cvoring.html" class="active">Коворкинг</a></li>
-			<li><a href="contacts.html">Контакты</a></li>
+			<% Category.all.each do |category| %>
+			<li><%= link_to category.title, category, :class => ('active' if category == @category) %></li>
+			<% end %>
 		</ul>
 	</div>
 </div>
