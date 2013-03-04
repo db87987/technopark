@@ -9,7 +9,7 @@
 		<div id="right" class="content">
 			<% @articles.each do |article| %>
 			<span class="h1" id="<%= article.id %>"><%= if article.img? then image_tag(article.img.url(:medium)) end %></span>
-			<%= sanitize article.text %>
+			<%= article.text.html_safe %>
 			<% end %>
 		</div>
 	</div>
