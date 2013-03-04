@@ -7,15 +7,13 @@ ru:
       admin_user:
         one: "Администратор"
         other: "Администраторы"
+      slide: "Слайд"
       event:
         one: "Новость"
         other: "Новости"
       article:
         one: "Статья"
         other: "Статьи"
-      block:
-        one: "Блочная статья"
-        other: "Блочные статьи"
       tag:
         one: "Тэг"
         other: "Тэги"

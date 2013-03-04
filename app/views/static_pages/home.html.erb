@@ -1,17 +1,11 @@
 <div class="main-links-wrap">
 	<div class="ml-slider" id="slider-idx">
 		<ul>
+			<%= @slides.each do |slide| %>
 			<li>
-				<%= image_tag("picture/slide-1.jpg", :size => "940x545") %>
+				<%= image_tag(slide.img.url(:content)) %>
 			</li>
-			
-			<li>
-				<%= image_tag("picture/slide-2.jpg", :size => "940x545") %>
-			</li>
-			
-			<li>
-				<%= image_tag("picture/slide-3.jpg", :size => "940x545") %>
-			</li>
+			<% end %>
 		</ul>
 		
 		<span class="ml-mask"></span>
