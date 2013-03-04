@@ -5,7 +5,7 @@
 			<% Category.all.each do |category| %>
 			<li><%= link_to category.title, category, :class => ('active' if category == @category) %></li>
 			<% end %>
-			<li><%= link_to "Новости", news_path, :class => ('active' if controller_name == "evetns") %></li>
+			<li><%= link_to "Новости", news_path, :class => ('active' if controller_name == "events") %></li>
 		</ul>
 	</div>
 </div>
