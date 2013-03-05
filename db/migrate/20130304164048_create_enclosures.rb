@@ -9,3 +9,4 @@ class CreateEnclosures < ActiveRecord::Migration
     end
   end
 end
+
