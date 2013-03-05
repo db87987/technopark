@@ -2,6 +2,7 @@ ru:
   no_image: "Изображение отсутствует"
   no_category: "Категория отсутствует"
   destroy_image: "Удалить изображение"
+  destroy_file: "Удалить файл"
   activerecord:
     models:
       admin_user:

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130305123531) do
+ActiveRecord::Schema.define(:version => 20130304164048) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -54,20 +54,8 @@ ActiveRecord::Schema.define(:version => 20130305123531) do
     t.datetime "img_updated_at"
     t.text     "text"
     t.integer  "category_id"
-    t.datetime "created_at",         :null => false
-    t.datetime "updated_at",         :null => false
-    t.string   "file1_file_name"
-    t.string   "file1_content_type"
-    t.integer  "file1_file_size"
-    t.datetime "file1_updated_at"
-    t.string   "file2_file_name"
-    t.string   "file2_content_type"
-    t.integer  "file2_file_size"
-    t.datetime "file2_updated_at"
-    t.string   "file3_file_name"
-    t.string   "file3_content_type"
-    t.integer  "file3_file_size"
-    t.datetime "file3_updated_at"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
   end
 
   create_table "categories", :force => true do |t|

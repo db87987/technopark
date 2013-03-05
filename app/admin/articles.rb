@@ -26,9 +26,6 @@ ActiveAdmin.register Article do
          end
           f.input :category
           f.input :text, :as => :ckeditor, :label => false
-          f.input :file1, :as => :file
-          f.input :file2, :as => :file
-          f.input :file3, :as => :file
         end
         f.buttons
       end
@@ -45,21 +42,6 @@ ActiveAdmin.register Article do
        row :text do |row|
          truncate(strip_tags(row.text), length: 200).html_safe  
        end
-       row :file1 do |row|
-          if row.file1?
-            link_to row.file1_file_name, row.file1.url(:original, false)
-          end
-        end
-        row :file2 do |row|
-           if row.file2?
-             link_to row.file2_file_name, row.file2.url(:original, false)
-           end
-         end
-         row :file3 do |row|
-            if row.file3?
-              link_to row.file3_file_name, row.file3.url(:original, false)
-            end
-          end
      end
    end
   
