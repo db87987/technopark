@@ -10,6 +10,13 @@
 			<% @articles.each do |article| %>
 			<span class="h1" id="<%= article.id %>"><%= if article.img? then image_tag(article.img.url(:medium)) end %></span>
 			<%= article.text.html_safe %>
+			<div class="files">
+			Прикрепленные файлы:
+			<ul>
+				<%= if article.file1? then content_tag :li, link_to(article.file1_file_name, article.file1.url(:original, false)) end %>
+				<%= if article.file2? then content_tag :li, link_to(article.file2_file_name, article.file2.url(:original, false)) end %>
+				<%= if article.file3? then content_tag :li, link_to(article.file3_file_name, article.file3.url(:original, false)) end %>
+			</ul>
 			<% end %>
 		</div>
 	</div>

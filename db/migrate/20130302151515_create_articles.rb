@@ -5,6 +5,9 @@ class CreateArticles < ActiveRecord::Migration
       t.attachment :img
       t.text :text
       t.integer :category_id
+      t.attachment :img
+      t.attachment :img
+      t.attachment :img
       
       t.timestamps
     end

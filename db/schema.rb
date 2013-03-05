@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130304074245) do
+ActiveRecord::Schema.define(:version => 20130305123531) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -54,8 +54,20 @@ ActiveRecord::Schema.define(:version => 20130304074245) do
     t.datetime "img_updated_at"
     t.text     "text"
     t.integer  "category_id"
-    t.datetime "created_at",       :null => false
-    t.datetime "updated_at",       :null => false
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.string   "file1_file_name"
+    t.string   "file1_content_type"
+    t.integer  "file1_file_size"
+    t.datetime "file1_updated_at"
+    t.string   "file2_file_name"
+    t.string   "file2_content_type"
+    t.integer  "file2_file_size"
+    t.datetime "file2_updated_at"
+    t.string   "file3_file_name"
+    t.string   "file3_content_type"
+    t.integer  "file3_file_size"
+    t.datetime "file3_updated_at"
   end
 
   create_table "categories", :force => true do |t|
@@ -82,6 +94,18 @@ ActiveRecord::Schema.define(:version => 20130304074245) do
 
   add_index "ckeditor_assets", ["assetable_type", "assetable_id"], :name => "idx_ckeditor_assetable"
   add_index "ckeditor_assets", ["assetable_type", "type", "assetable_id"], :name => "idx_ckeditor_assetable_type"
+
+  create_table "enclosures", :force => true do |t|
+    t.string   "title"
+    t.string   "attachment_file_name"
+    t.string   "attachment_content_type"
+    t.integer  "attachment_file_size"
+    t.datetime "attachment_updated_at"
+    t.integer  "attachable_id"
+    t.string   "attachable_type"
+    t.datetime "created_at",              :null => false
+    t.datetime "updated_at",              :null => false
+  end
 
   create_table "events", :force => true do |t|
     t.string   "title"
