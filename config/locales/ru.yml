@@ -5,6 +5,9 @@ ru:
   destroy_file: "Удалить файл"
   activerecord:
     models:
+      page:
+        one: "Страница"
+        other: "Страницы"
       admin_user:
         one: "Администратор"
         other: "Администраторы"
@@ -25,6 +28,10 @@ ru:
         one: "Раздел"
         other: "Разделы"
     attributes:
+      page:
+        title: "Заголовок"
+        text: "Текст"
+        img: "Изображение"
       article:
         title: "Заголовок"
         img: "Изображение"

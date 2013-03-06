@@ -1,12 +1,12 @@
-class CreateArticles < ActiveRecord::Migration
+class CreatePages < ActiveRecord::Migration
   def change
-    create_table :articles do |t|
+    create_table :pages do |t|
       t.string :title
       t.attachment :img
       t.text :text
-      t.integer :category_id
       
       t.timestamps
     end
   end
 end
+
