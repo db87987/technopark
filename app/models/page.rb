@@ -1,5 +1,5 @@
 class Page < ActiveRecord::Base
-  attr_accessible :text, :img, :title
+  attr_accessible :text, :img, :title, :delete_img
   has_attached_file :img, :styles => { :medium => "770", :thumb => "100x100>" }
   extend FriendlyId
   friendly_id :title, :use => [:slugged, :history]
