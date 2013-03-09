@@ -2,6 +2,6 @@ class StaticPagesController < ApplicationController
   layout "static"
   
   def home
-    @slides = Slide.all
+    @slides = Slide.order("SN ASC")
   end
 end

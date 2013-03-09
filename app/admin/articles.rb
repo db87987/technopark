@@ -4,6 +4,7 @@ ActiveAdmin.register Article do
   
    index do 
     column :title
+    column :sn
     column :img do |column|
       if column.img?
         image_tag(column.img.url(:thumb))
@@ -20,6 +21,7 @@ ActiveAdmin.register Article do
   form :html => { :enctype => "multipart/form-data" } do |f|
         f.inputs "Details" do
           f.input :title 
+          f.input :sn
           f.input :img, :as => :file, :hint => ( f.object.new_record? || !f.object.img? ) ? nil : image_tag(f.object.img.url(:thumb))
              unless f.object.new_record? || !f.object.img?
            f.input :delete_img, :as => :boolean, :label => I18n.t('destroy_image'), :wrapper_html => { :class => "important" }
@@ -33,6 +35,7 @@ ActiveAdmin.register Article do
   show do
     attributes_table do
        row :title
+       row :sn
        row :img do |row|
          if row.img?
            image_tag(row.img.url(:thumb))
