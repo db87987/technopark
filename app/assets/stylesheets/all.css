@@ -237,12 +237,12 @@ body {color: #55382f; min-width: 990px;}
 
 #middle #left .affix {
 	position: fixed;
-	top: 325px;
+	top: 230px;
 }
 
 #middle #left .affix-top {
 	position: fixed;
-	top: 325px;
+	top: 230px;
 }
 /*
 #middle #left .affix-bottom {
