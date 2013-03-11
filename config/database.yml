@@ -21,7 +21,7 @@ test:
 production:
   adapter: mysql2
   encoding: utf8
-  host: mysql5.locum.ru
-  database: babrovka_techn29
-  username: babrovka_techn29
-  password: dKopFJbD
+  host: localhost
+  database: technopark
+  username: tpark
+  password: pGwC60
