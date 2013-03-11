@@ -23,5 +23,5 @@ production:
   encoding: utf8
   host: localhost
   database: technopark
-  username: tpark
+  username: technopark
   password: pGwC60
