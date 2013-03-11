@@ -23,7 +23,7 @@ gem 'jquery-rails'
 
 
 gem 'capistrano'
-gem 'unicorn'
+#gem 'unicorn'
 gem 'execjs'
 gem 'therubyracer'
 

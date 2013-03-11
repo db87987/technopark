@@ -1,7 +1,4 @@
-
-
-
-
+load 'deploy/assets'
 
 server "194.190.225.173", :web, :app, :db, primary: true
 
