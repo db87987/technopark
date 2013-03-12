@@ -1,3 +1,8 @@
+set :bundle_cmd, "/home/tpark/.rvm/gems/ruby-1.9.3-p392@global/bin/bundle"
+set :bundle_dir, "/home/tpark/.rvm/gems/ruby-1.9.3-p392"
+
+require 'bundler/capistrano'
+
 server "194.190.225.173", :web, :app, :db, primary: true
 
 set :user, "tpark"
