@@ -35,7 +35,7 @@ end
 
 namespace(:customs) do
   task :restart do
-    run "cd #{current_path}; thin restart"
+    run "cd #{current_path}; RAILS_ENV=#{rails_env} thin restart"
    end
 end
 
