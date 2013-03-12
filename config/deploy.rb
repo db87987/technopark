@@ -22,7 +22,7 @@ ssh_options[:forward_agent] = true
 
 namespace(:customs) do
   task :restart do
-     thin restart
+    run "#{current_path}/thin restart"
    end
 end
 
