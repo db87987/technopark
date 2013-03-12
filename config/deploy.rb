@@ -1,9 +1,6 @@
 require 'rvm/capistrano'
 require 'bundler/capistrano'
 
-# RVM environment
-set :rvm_ruby_string, "ruby-1.9.3-p392@global"
-
 server "194.190.225.173", :web, :app, :db, primary: true
 
 set :user, "tpark"
@@ -35,7 +32,7 @@ end
 
 namespace(:customs) do
   task :restart do
-    run "cd #{current_path}; RAILS_ENV=#{rails_env} thin restart"
+    run "cd #{current_path}; thin restart"
    end
 end
 
