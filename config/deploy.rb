@@ -35,7 +35,7 @@ end
 
 namespace(:customs) do
   task :restart do
-    run "thin restart"
+    run "cd #{current_path}; thin restart"
    end
 end
 
