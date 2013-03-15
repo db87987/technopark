@@ -3,5 +3,6 @@ class StaticPagesController < ApplicationController
   
   def home
     @slides = Slide.order("SN ASC")
+    @categories = Category.all
   end
 end

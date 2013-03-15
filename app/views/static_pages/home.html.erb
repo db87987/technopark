@@ -14,12 +14,9 @@
 	<span class="ml-yellow"><a href="#">О нас</a></span>
 	
 	<ul class="ml-green">
-		<li><a href="/categories/tehnopark">Технопарк</a></li>
-		<li><a href="/categories/biznes-inkubator">Бизнес-инкубатор</a></li>
-		<li><a href="/categories/tsentr-predprinimatelstva">Центр предпринимательства</a></li>
-		<li><a href="/categories/kovorking">Коворкинг</a></li>
-		<li><a href="/categories/programmy">Образовательные программы</a></li>
-		<li><a href="/categories/rezidenty">Резиденты</a></li>
+		<% @categories.each do |category| %>
+		<li><%= link_to category.title, category %></li>
+		<% end %>
 	</ul>
 
 	<ul class="ml-grey">
