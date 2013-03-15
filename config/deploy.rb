@@ -36,8 +36,4 @@ namespace(:customs) do
    end
 end
 
-
-
-
-after "deploy", "deploy:cleanup" # keep only the last 5 releases
-after "deploy:cleanup", "customs:restart"
+after "deploy", "deploy:cleanup"
