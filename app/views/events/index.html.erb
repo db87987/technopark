@@ -15,7 +15,9 @@
 			<% Event.where(:tag_id => tag.id).all.each do |event| %>
 			<dt><span><%= event.title %></span><i><%= if event.date? then event.date.strftime("%d.%m.%Y") end %></i></dt>
 			<dd class="content">
-				<div><%= sanitize event.text %></div>
+				<div class="nl-preview-text"><%= sanitize event.short %><span class="nl-dots">...</span><span class="nl-other-text">&nbsp <%= sanitize event.text %></span>
+				</div>
+				<a href="#" class="nl-detail-link">показать новость полностью</a>
 			</dd>
 			<% end %>
 			<% end %>

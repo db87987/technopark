@@ -322,3 +322,6 @@ body {color: #55382f; min-width: 990px;}
 .news-list dd .nl-preview-text, .news-list dd .nl-other-text {padding-bottom: 10px;}
 
 .news-list dd .nl-other-text {display: none;}
+
+.news-list dd.nl-active .nl-other-text {display: inline}
+.news-list dd.nl-active .nl-dots {display: none}

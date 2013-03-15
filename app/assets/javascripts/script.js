@@ -6,15 +6,14 @@ $(document).ready(function(){
 		var linkElement = $(this);
 		var linkText = $(this).text();
 	
-		$(this).siblings(".nl-other-text").slideToggle(function(){
-			if (linkText == "свернуть")
-				$(linkElement).text("показать новость полностью");
-			else
-				$(linkElement).text("свернуть");
-		}).parent().siblings("dd").find(".nl-other-text").slideUp(function(){
-			$(this).next(".nl-detail-link").text("показать новость полностью");
-		});
+		$(this).parent().toggleClass("nl-active").siblings("dd").removeClass("nl-active").
+			find(".nl-detail-link").text("показать новость полностью");;
 		
+		if (linkText == "свернуть")
+			$(linkElement).text("показать новость полностью");
+		else
+			$(linkElement).text("свернуть");
+	
 		return false;
 	});
 	

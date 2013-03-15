@@ -42,6 +42,10 @@ ru:
         file3: "Файл №3"
       event:
         title: "Заголовок"
+        date: "Дата"
+        tag: "Тэг"
+        short: "Вводный текст"
+        text: "Текст"
       enclosure:
         title: "Название"
         attachement: "Файл"
