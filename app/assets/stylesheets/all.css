@@ -340,7 +340,7 @@ body {color: #55382f; min-width: 990px;}
 }
 
 #contacts-tpl .h-wrap {
-	background: url("../img/header-bg.png");
+	background: url("header-bg.png");
 	position: relative;
 	width: 100%;
 }
