@@ -4,8 +4,6 @@ Technopark::Application.routes.draw do
 
   mount Ckeditor::Engine => '/ckeditor'
 
-  get "static_pages/home"
-
   devise_for :admin_users, ActiveAdmin::Devise.config
 
   ActiveAdmin.routes(self)
@@ -13,6 +11,7 @@ Technopark::Application.routes.draw do
   resources :categories
   resources :pages
   match '/news',  to: 'events#index'
+  match '/contacts',  to: 'StaticPages#contacts'
  
   root :to => 'StaticPages#home'
 

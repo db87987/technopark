@@ -5,4 +5,7 @@ class StaticPagesController < ApplicationController
     @slides = Slide.order("SN ASC")
     @categories = Category.all
   end
+  
+  def contacts
+  end
 end

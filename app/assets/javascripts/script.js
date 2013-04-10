@@ -17,4 +17,20 @@ $(document).ready(function(){
 		return false;
 	});
 	
+	// Контакты (показать адрес)
+	$(".ct-title").click(function(){
+		var linkElement = $(this).find("span");
+		var linkText = $(this).find("span").text();
+	
+		$(this).toggleClass("ct-active").
+			next("div").toggle();
+		
+		if (linkText == "Показать адрес")
+			$(linkElement).text("Скрыть адрес");
+		else
+			$(linkElement).text("Показать адрес");
+	
+		return false;
+	});
+	
  });
