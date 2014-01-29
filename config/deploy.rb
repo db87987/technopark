@@ -36,10 +36,18 @@ after "deploy:update_code", :copy_database_config
    run "cp #{db_config} #{release_path}/config/database.yml"
 end
 
-namespace(:customs) do
-  task :restart do
-    run "cd #{current_path}; thin restart"
+namespace(:thin) do
+  task :stop do
+    run "thin stop -C /home/tpark/tpark.yml"
    end
+  
+  task :start do
+    run "thin start -C /home/tpark/tpark.yml"
+  end
+
+  task :restart do
+    run "thin restart -C C /home/tpark/tpark.yml"
+  end
 end
 
 after "deploy", "deploy:cleanup"

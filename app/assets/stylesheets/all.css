@@ -61,11 +61,21 @@ body {color: #55382f; min-width: 990px;}
 .logo {
 	background: url(logo.png) no-repeat;
 	position: absolute;
-	top: 20px; left: 20px;
+	top: 20px; left: 120px;
 	height: 70px;
 	overflow: hidden;
 	text-indent: -1000px;
 	width: 160px;
+}
+
+.logo_politech {
+	background: url(logo-politech.jpg) no-repeat;
+	position: absolute;
+	top: 20px; left: -60px;
+	height: 82px;
+	overflow: hidden;
+	text-indent: -1000px;
+	width: 120px;
 }
 
 .main-links-wrap {
